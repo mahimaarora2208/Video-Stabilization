@@ -2,13 +2,18 @@
 """
 Created on Mon Apr 25 21:48:56 2022
 
-@author: sharm
+@author: Naveen Mangla
+@author: Mahima Arora 
+@author: Charu Sharma 
+
 """
 
 import numpy as np
 import cv2
 
-
+##########################
+## change the path here ## 
+##########################
 vid = cv2.VideoCapture('/home/naveen/courses/ENPM673/Video-Stabilization/input_video.mp4')
 # shape: (1080, 1920, 3)
 
