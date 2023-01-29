@@ -9,7 +9,7 @@ import numpy as np
 import cv2
 
 
-vid = cv2.VideoCapture('input_video.mp4')
+vid = cv2.VideoCapture('/home/naveen/courses/ENPM673/Video-Stabilization/input_video.mp4')
 # shape: (1080, 1920, 3)
 
 # Get frame count
