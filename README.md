@@ -1,3 +1,3 @@
 # Video-Stabilization
 
-video stabalization using optical flow on meshes 
+This project involves Implementation of Conference Paper [Link]
