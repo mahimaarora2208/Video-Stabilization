@@ -8,4 +8,4 @@ Video stabilization using Sparse Optical Flow using a Mesh grid. This includes o
 
 Results: 
 
-[Video](https://www.linkedin.com/posts/naveen-mangla-68a516172_stablization-computervision-robotics-activity-6931279759121281024-o_wn?utm_source=share&utm_medium=member_desktop)
+<video src='https://github.com/nvnmangla/BFS/blob/master/Video-Stabilization/Results/result.mp4' width=180/>
