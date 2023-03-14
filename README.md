@@ -8,4 +8,7 @@ Video stabilization using Sparse Optical Flow using a Mesh grid. This includes o
 
 Results: 
 
-<video src='https://github.com/nvnmangla/BFS/blob/master/Video-Stabilization/Results/result.mp4' width=180/>
+<p align="center">
+  <img width="460" height="460" src="https://github.com/nvnmangla/BFS/blob/master/Video-Stabilization/Results/result .gif">
+</p>
+<br />
