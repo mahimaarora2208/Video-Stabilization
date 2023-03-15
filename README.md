@@ -14,6 +14,7 @@ Moreover, doing optical flow is computationally expensive, therefore we aim to d
 
 <p align="center"> 
     <img src="https://github.com/nvnmangla/Video-Stabilization/blob/2f1e92c8286fba8e4792690944c1c1c99a3793f3/Results/steadyVsMesh.png">
+    <caption "Hello">
 <!-- ![Mesh Flow](https://github.com/nvnmangla/Video-Stabilization/blob/2f1e92c8286fba8e4792690944c1c1c99a3793f3/Results/steadyVsMesh.png) -->
 </p>
 
