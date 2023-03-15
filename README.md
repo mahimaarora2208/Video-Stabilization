@@ -18,8 +18,13 @@ Moreover, doing optical flow is computationally expensive, therefore we aim to d
 </p>
 <p align="center"> 
     <em>Taking Pixel Profiles Vs taking Mesh Vertices for computing flow</em>
-<!-- ![Mesh Flow](https://github.com/nvnmangla/Video-Stabilization/blob/2f1e92c8286fba8e4792690944c1c1c99a3793f3/Results/steadyVsMesh.png) -->
 </p>
 
 Results: 
-![Video Output](https://github.com/nvnmangla/Video-Stabilization/blob/377ca47fcdf89a687b7f9644454d8258a2c0536f/Results/result%20.gif)
+<p align="center"> 
+<img src="https://github.com/nvnmangla/Video-Stabilization/blob/377ca47fcdf89a687b7f9644454d8258a2c0536f/Results/result%20.gif" alt>
+</p>
+
+<p align="center"> 
+    <em>Input Video  -- Stable Video </em>
+</p>
