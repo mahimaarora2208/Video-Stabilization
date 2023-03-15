@@ -27,16 +27,26 @@ Moreover, doing optical flow is computationally expensive, therefore we aim to d
 <img src="https://github.com/nvnmangla/Video-Stabilization/blob/b8a2ebd574213bf376dbc6270b9cd2d19a5ad729/Results/old_motion_vectors/2.jpg" alt>
 </p>
 
+<p align="center"> 
+    <em>Motion Vectors</em>
+</p>
+
 - Next, these motion vectors are transferred to their corresponding nearby mesh vertexes,such that each vertex accumulates several motions from its surrounding feature
 - With regards to the camera motion smoothing, we design a filter to smooth the temporal changes of the motion vector at each mesh vertex. This filter is applied to each mesh vertex
 - Use PAPS (Predicted Adaptive Path Smoothing is when old frame flow is used to predict future flow of frame. We reduce excessive cropping and wobble distortion using this) for strong stabilization by using previous frame
+<p align="center"> 
+<img src="https://github.com/nvnmangla/Video-Stabilization/blob/3a4a1ee195857697c229e15350d6f4b0b82d5add/Results/paths/0_20.png" alt>
+</p>
+
+<p align="center"> 
+    <em>Original vs Optimized Path of Vertex</em>
+</p>
+
 - Generate a stabilized video 
 
 
 
-<p align="center"> 
-    <em>Motion Vectors</em>
-</p>
+
 
 ## Results 
 <p align="center"> 
