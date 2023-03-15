@@ -12,7 +12,7 @@ import numpy as np
 from tqdm import tqdm
 import matplotlib.pyplot as plt
 from scipy.signal import medfilt
-
+import argparse
 
 def get_mesh_flow(old_frame,old_pts,new_pts,grid,radius=300) :
     cols, rows = old_frame.shape[1]//grid, old_frame.shape[0]//grid
@@ -136,7 +136,7 @@ def plot_vertex_profiles(xpaths, sxpaths):
         for j in range(0, xpaths.shape[1], 10):
             plt.plot(xpaths[i, j, :])
             plt.plot(sxpaths[i, j, :])
-            plt.savefig(path+'results/paths/'+str(i)+'_'+str(j)+'.png')
+            plt.savefig('results/paths/'+str(i)+'_'+str(j)+'.png')
             plt.clf()
     
 # To get a update motion mesh for each frame with which it needs to be warped
@@ -199,11 +199,6 @@ def warp_frame(frame, x_mesh, y_mesh):
     return new_frame
 
 
-########### Change this path according to your directory ############
-######################################################################
-
-path = ""
-
 #######################################################################
 # params for ShiTomasi corner detection
 feature_params = dict( maxCorners = 1000,
@@ -223,7 +218,12 @@ lk_params = dict( winSize  = (15, 15),
 
 start_time = time.time()
 
-cap = cv2.VideoCapture(path + "input_video.mp4")
+Parser = argparse.ArgumentParser()
+Parser.add_argument('--video', default='input_video.mp4',
+                    help='Give your path')
+
+video = Parser.video
+cap = cv2.VideoCapture(video)
 frames = []
 
 # Getting video properties
@@ -352,7 +352,7 @@ for frame_num in tqdm(range(len(frames) - 1)):
         for j in range(x_motion_mesh.shape[1]):
             theta = np.arctan2(y_motion_mesh[i, j], x_motion_mesh[i, j])
             cv2.line(frame, (j*grid_size, i*grid_size), (int(j*grid_size+r*np.cos(theta)), int(i*grid_size+r*np.sin(theta))), 1)
-    cv2.imwrite(path+'results/old_motion_vectors/'+str(frame_num)+'.jpg', frame)
+    cv2.imwrite(f"results/old_motion_vectors/'{frame_num}'.jpg", frame)
 
 
     # draw new motion vectors
@@ -360,7 +360,7 @@ for frame_num in tqdm(range(len(frames) - 1)):
         for j in range(new_x_motion_mesh.shape[1]):
             theta = np.arctan2(new_y_motion_mesh[i, j], new_x_motion_mesh[i, j])
             cv2.line(new_frame, (j*grid_size, i*grid_size), (int(j*grid_size+r*np.cos(theta)), int(i*grid_size+r*np.sin(theta))), 1)
-    cv2.imwrite(path+'results/new_motion_vectors/'+str(frame_num)+'.jpg', new_frame)
+    cv2.imwrite(f"results/new_motion_vectors/'{frame_num}+'.jpg", new_frame)
 
 out.release()
 cv2.destroyAllWindows()
