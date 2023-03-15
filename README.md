@@ -26,5 +26,5 @@ Results:
 </p>
 
 <p align="center"> 
-    <em>Input Video  -- Stable Video </em>
+    <em>Input Video  | Stable Video </em>
 </p>
