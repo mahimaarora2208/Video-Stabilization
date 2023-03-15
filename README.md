@@ -21,7 +21,15 @@ Moreover, doing optical flow is computationally expensive, therefore we aim to d
 </p>
 
 ## Steps Followed 
-### 
+- We record a video and place a regular 2D mesh on the video frame
+- We then track image corners or "features" between consecutive frames, which yields a motion vector at each feature location. 
+<p align="center"> 
+<img src="https://github.com/nvnmangla/Video-Stabilization/blob/b8a2ebd574213bf376dbc6270b9cd2d19a5ad729/Results/old_motion_vectors/2.jpg" alt>
+</p>
+
+<p align="center"> 
+    <em>Motion Vectors</em>
+</p>
 
 ## Results 
 <p align="center"> 
