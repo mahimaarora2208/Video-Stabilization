@@ -8,7 +8,7 @@ Video stabilization using Sparse Optical Flow using a Mesh grid. This includes o
 
 ## Steps to Run
 ```
-git clone https://github.com/mahimaarora2208/Video-Stabilization.gitt
+git clone https://github.com/mahimaarora2208/Video-Stabilization.git
 cd Video-Stabilization
 python3 main.py --video="<your video path>"
 ```
