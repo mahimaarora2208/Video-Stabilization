@@ -1,6 +1,6 @@
 # Video-Stabilization
 
-This project involves Implementation of [Conference Paper](https://github.com/nvnmangla/Video-Stabilization/blob/main/paper.pdf), 
+This project involves Implementation of [Conference Paper](https://github.com/nvnmangla/Video-Stabilization/blob/main/paper.pdf).
 
 ## Introduction:
 
@@ -8,7 +8,7 @@ Video stabilization using Sparse Optical Flow using a Mesh grid. This includes o
 
 ## Steps to Run
 ```
-git clone git@github.com:nvnmangla/Video-Stabilization.git
+git clone https://github.com/mahimaarora2208/Video-Stabilization.gitt
 cd Video-Stabilization
 python3 main.py --video="<your video path>"
 ```
